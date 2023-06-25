@@ -5,7 +5,7 @@ import { images } from "./images"; // Assuming you have imageData.js file export
 
 const Slider = () => {
   return (
-    <div className="bg-[#FEF3F3] md:py-20">
+    <div className="bg-[#FEF3F3] md:py-20 mt-20">
       <div className="max-w-[1200px] mx-auto">
         <div className="max-w-[800px] mx-auto">
           <Carousel autoPlay infiniteLoop>

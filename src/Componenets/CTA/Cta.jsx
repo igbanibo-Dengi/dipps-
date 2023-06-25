@@ -14,7 +14,7 @@ const Cta = () => {
             remarkable appearance that is perfectly tailored to your individual
             preferences.
           </p>
-          <button className="hover:scale-105 duration-500 py-2 px-4 border-2 w-[50%] mx-auto border-black uppercase">
+          <button className="hover:scale-105 duration-500 py-2 px-4 border-2 w-[fit-content] mx-auto border-black uppercase">
             get in touch
           </button>
         </div>
