@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./nav.css";
 import { GrMenu } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,30 +18,30 @@ const Nav = () => {
             Dipps Makeover
           </span>
           <ul className="hidden lg:flex flex-row justify-around items-center w-[40%]">
-            <a
-              href="/"
+            <Link
+              to="/home"
               className="text-gray-800 hover:underline hover:text-gray-500 text-[17px] uppercase cursor-pointer"
             >
               Home
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+              to="/about"
               className="text-gray-800 hover:underline hover:text-gray-500 text-[17px] uppercase cursor-pointer"
             >
               About
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+              to="/portfolio"
               className="text-gray-800 hover:underline hover:text-gray-500 text-[17px] uppercase cursor-pointer"
             >
               Portfolio
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+              to="/contact"
               className="text-gray-800 hover:underline hover:text-gray-500 text-[17px] uppercase cursor-pointer"
             >
               Contact
-            </a>
+            </Link>
           </ul>
           {/* Hamburger Icon */}
           <GrMenu size={25} className="lg:hidden" onClick={toggleMobileMenu} />
@@ -51,30 +52,30 @@ const Nav = () => {
           }`}
         >
           <ul className="flex flex-col justify-around shadow-md px-4 border-black border-t-2 h-[200px]">
-            <a
-              href="/"
-              className="text-gray-800 hover:text-gray-500 text-[17px] uppercase cursor-pointer"
+            <Link
+              to="/home"
+              className="text-gray-800 hover:underline hover:text-gray-500 text-[17px] uppercase cursor-pointer"
             >
               Home
-            </a>
-            <a
-              href="/"
-              className="text-gray-800 hover:text-gray-500 text-[17px] uppercase cursor-pointer"
+            </Link>
+            <Link
+              to="/about"
+              className="text-gray-800 hover:underline hover:text-gray-500 text-[17px] uppercase cursor-pointer"
             >
               About
-            </a>
-            <a
-              href="/"
-              className="text-gray-800 hover:text-gray-500 text-[17px] uppercase cursor-pointer"
+            </Link>
+            <Link
+              to="/portfolio"
+              className="text-gray-800 hover:underline hover:text-gray-500 text-[17px] uppercase cursor-pointer"
             >
               Portfolio
-            </a>
-            <a
-              href="/"
-              className="text-gray-800 hover:text-gray-500 text-[17px] uppercase cursor-pointer"
+            </Link>
+            <Link
+              to="/contact"
+              className="text-gray-800 hover:underline hover:text-gray-500 text-[17px] uppercase cursor-pointer"
             >
               Contact
-            </a>
+            </Link>
           </ul>
         </nav>
       </div>

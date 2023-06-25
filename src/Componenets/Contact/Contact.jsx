@@ -101,6 +101,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <div className="text-center p-6 border-t border-t-black">
+        <p>© 2023 Dipps Makeover</p>
+      </div>
     </section>
   );
 };
