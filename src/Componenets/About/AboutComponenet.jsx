@@ -3,7 +3,7 @@ import IntroImg from "../../Assets/images/intro-img.png";
 
 const AboutComponenet = () => {
   return (
-    <section className="flex flex-col md:flex-row max-w-[1200px] pt-[100px] items-end justify-center lg:pt-[200px] mx-auto md:px-5">
+    <section className="flex flex-col md:flex-row max-w-[1200px] pt-[100px] items-end lg:pt-[200px] mx-auto md:px-5">
       <div className="md:w-[60%] md:pt-20 px-4 md:px-0 flex flex-col gap-3 ">
         <h1 className="text-4xl md:text-5xl mb-10">About</h1>
         <p>Where Beauty Transforms into Art</p>

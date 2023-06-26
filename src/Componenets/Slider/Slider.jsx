@@ -1,11 +1,11 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { images } from "./images"; // Assuming you have imageData.js file exporting the 'images' array
+import { images } from "./images";
 
 const Slider = () => {
   return (
-    <div className="bg-[#FEF3F3] md:py-20 mt-20">
+    <div className="bg-[#FEF3F3] mt-10 md:mt-0 md:py-20">
       <div className="max-w-[1200px] mx-auto">
         <div className="max-w-[800px] mx-auto">
           <Carousel autoPlay infiniteLoop>
