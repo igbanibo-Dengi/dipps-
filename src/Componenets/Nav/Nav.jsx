@@ -13,9 +13,9 @@ const Nav = () => {
   return (
     <div className="z-1 shadow-lg">
       <div className="bg-white fixed w-full z-10 shadow-2xl">
-        <nav className="flex flex-row relative justify-between items-center max-w-[1200px] w-[80%] mx-auto py-2">
+        <nav className="flex flex-row relative justify-between items-center max-w-[1200px] px-2 xsm:w-[80%] mx-auto py-2">
           <span className="nav-logo text-[22px] md:text-[36px] lg:text-[48px] uppercase text-bold">
-            Dipps Makeover
+            Dipps Beautifyers
           </span>
           <ul className="hidden lg:flex flex-row justify-around items-center w-[40%]">
             <Link

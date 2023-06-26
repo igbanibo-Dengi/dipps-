@@ -1,5 +1,6 @@
 import React from "react";
 import CTAIMG from "../../Assets/images/cta-img.jpg";
+import { Link } from "react-router-dom";
 
 const Cta = () => {
   return (
@@ -14,9 +15,12 @@ const Cta = () => {
             remarkable appearance that is perfectly tailored to your individual
             preferences.
           </p>
-          <button className="hover:scale-105 duration-500 py-2 px-4 border-2 w-[fit-content] mx-auto border-black uppercase">
+          <Link
+            to="/Contact"
+            className="hover:scale-105 duration-500 py-2 px-4 border-2 w-[fit-content] mx-auto border-black uppercase"
+          >
             get in touch
-          </button>
+          </Link>
         </div>
         <div className="p-5 md:w-full hidden md:block">
           <img src={CTAIMG} alt="call to action" />

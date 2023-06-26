@@ -2,12 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
-    // screens: {
-    //   sm: '480px',
-    //   md: '768px',
-    //   lg: '900px',
-    //   xl: '1200px'
-    // },
+    screens: {
+      xsm: '300px',
+      sm: '480px',
+      md: '768px',
+      lg: '900px',
+      xl: '1200px'
+    },
     extend: {
       colors: {
         brightRed: 'hsl(12, 88%, 59%)',

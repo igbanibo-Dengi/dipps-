@@ -45,37 +45,37 @@ function Gallery() {
         elementClassNames="custom-wrapper-class grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-4"
       >
         <a href={IMG10}>
-          <img alt="dipps-makeover" src={IMG10} />
+          <img alt="Dipps-Beautifyers" src={IMG10} />
         </a>
         <a href={IMG7}>
-          <img alt="dipps-makeover" src={IMG7} />
+          <img alt="Dipps-Beautifyers" src={IMG7} />
         </a>
         <a href={IMG1}>
-          <img alt="dipps-makeover" src={IMG1} />
+          <img alt="Dipps-Beautifyers" src={IMG1} />
         </a>
         <a href={IMG2}>
-          <img alt="dipps-makeover" src={IMG2} />
+          <img alt="Dipps-Beautifyers" src={IMG2} />
         </a>
         <a href={IMG3}>
-          <img alt="dipps-makeover" src={IMG3} />
+          <img alt="Dipps-Beautifyers" src={IMG3} />
         </a>
         <a href={IMG4}>
-          <img alt="dipps-makeover" src={IMG4} />
+          <img alt="Dipps-Beautifyers" src={IMG4} />
         </a>
         <a href={IMG11}>
-          <img alt="dipps-makeover" src={IMG11} />
+          <img alt="Dipps-Beautifyers" src={IMG11} />
         </a>
         <a href={IMG5}>
-          <img alt="dipps-makeover" src={IMG5} />
+          <img alt="Dipps-Beautifyers" src={IMG5} />
         </a>
         <a href={IMG6}>
-          <img alt="dipps-makeover" src={IMG6} />
+          <img alt="Dipps-Beautifyers" src={IMG6} />
         </a>
         <a href={IMG8}>
-          <img alt="dipps-makeover" src={IMG8} />
+          <img alt="Dipps-Beautifyers" src={IMG8} />
         </a>
         <a href={IMG9}>
-          <img alt="dipps-makeover" src={IMG9} />
+          <img alt="Dipps-Beautifyers" src={IMG9} />
         </a>
       </LightGallery>
     </div>

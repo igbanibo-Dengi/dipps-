@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { images } from "./images";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   return (
@@ -22,9 +23,12 @@ const Slider = () => {
         </div>
 
         <div className="flex">
-          <button className="uppercase hover:scale-105 duration-500 py-2 px-4 border-2 w-[fit-content] mx-auto border-black">
+          <Link
+            to="/Portfolio"
+            className="uppercase hover:scale-105 text-center duration-500 py-2 px-4 border-2 w-[fit-content] mx-auto border-black"
+          >
             View Portfolio
-          </button>
+          </Link>
         </div>
       </div>
     </div>

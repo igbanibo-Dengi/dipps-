@@ -102,7 +102,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="text-center p-6 border-t border-t-black">
-        <p>© 2023 Dipps Makeover</p>
+        <p>© 2023 Dipps Beautifyers</p>
       </div>
     </section>
   );

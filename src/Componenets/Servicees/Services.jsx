@@ -11,8 +11,8 @@ const Services = () => {
         <div className="text-center mb-10 text-3xl">
           <p>SERVICES</p>
         </div>
-        <div className="flex flex-col md:flex-row gap-10 px-2 sm:px-0">
-          <div className="flex flex-col justify-center text-center  shadow-lg  border-2 border-[#FEF3F3] p-4 rounded">
+        <div className="flex flex-col md:flex-row gap-10 items-center px-2 sm:px-0">
+          <div className="flex flex-col justify-center text-center bg-white  shadow-lg  border-2 border-[#FEF3F3] p-4 rounded">
             <img src={IMG1} alt="services" className="w-[400px] h-[auto]" />
             <p className="text-2xl p-4">BRIDAL</p>
             <Link
@@ -22,7 +22,7 @@ const Services = () => {
               Book Now
             </Link>
           </div>
-          <div className="flex flex-col justify-center text-center  shadow-lg border-2 border-[#FEF3F3] p-4 rounded">
+          <div className="flex flex-col justify-center text-center bg-white  shadow-lg border-2 border-[#FEF3F3] p-4 rounded">
             <img src={IMG2} alt="services" className="w-[400px] h-[auto]" />
             <p className="text-2xl p-4">EVENT</p>
             <Link
@@ -32,7 +32,7 @@ const Services = () => {
               Book Now
             </Link>
           </div>
-          <div className="flex flex-col justify-center text-center  shadow-lg border-2 border-[#FEF3F3] p-4 rounded">
+          <div className="flex flex-col justify-center text-center bg-white  shadow-lg border-2 border-[#FEF3F3] p-4 rounded">
             <img src={IMG3} alt="services" className="w-[400px] h-[auto]" />
             <p className="text-2xl p-4">CASUAL</p>
             <Link
