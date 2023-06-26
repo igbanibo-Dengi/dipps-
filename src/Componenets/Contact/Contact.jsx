@@ -4,6 +4,8 @@ import { AiFillPhone } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -27,12 +29,30 @@ const Contact = () => {
     </div>
   );
 
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+    threshold: 0.1, // Percentage of the element's visibility required to trigger the animation
+  });
+
   return (
     <section>
       <div className="flex flex-col lg:flex-row md:gap-10 px-6 py-10">
         <div className="w-full pt-5 flex flex-col">
-          <h3 className="text-3xl text-center">GET IN TOUCH</h3>
-          <div className="flex flex-row justify-center gap-10 py-5 ">
+          <motion.h1
+            ref={ref}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.5 }}
+            transition={{ duration: 1 }}
+            className=" text-center text-3xl"
+          >
+            GET IN TOUCH
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.9, ease: "easeInOut" }}
+            className="flex flex-row justify-center gap-10 py-5 "
+          >
             <a href="/" className="hover:scale-110 duration-300">
               <AiFillPhone size={30} />
             </a>
@@ -42,7 +62,7 @@ const Contact = () => {
             <a href="/" className="hover:scale-110 duration-300">
               <AiFillInstagram size={30} />
             </a>
-          </div>
+          </motion.div>
           <form className="grid grid-cols-2 gap-3 mt-4">
             <input
               className="border border-black p-3"

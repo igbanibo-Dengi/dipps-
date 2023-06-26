@@ -1,5 +1,6 @@
 import React from "react";
 import IntroImg from "../../Assets/images/intro-img.png";
+import { motion } from "framer-motion";
 
 const Intro = () => {
   return (
@@ -20,9 +21,14 @@ const Intro = () => {
           captivating beauty and unforgettable moments.
         </p>
       </div>
-      <div className="flex flex-row justify-center mt-10 md:mt-0 md:justify-center md:items-end">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
+        className="flex flex-row justify-center mt-10 md:mt-0 md:justify-center md:items-end"
+      >
         <img src={IntroImg} alt="Intro" />
-      </div>
+      </motion.div>
     </section>
   );
 };

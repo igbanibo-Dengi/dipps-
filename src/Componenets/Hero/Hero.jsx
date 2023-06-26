@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import HeroBg from "../../Assets/images/hero-bg-2.jpg";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -15,7 +16,14 @@ const Hero = () => {
           </h1>
           <h3 className="text-[23px] md:text-[30px]">By Dipps</h3>
         </div>
-        <button
+        <motion.button
+          animate={{ x: [60, 120, 0], opacity: 1, scale: 1 }}
+          transition={{
+            duration: 2,
+            delay: 0.4,
+            ease: [0.5, 0.71, 1, 1.5],
+          }}
+          initial={{ opacity: 0, scale: 0.5 }}
           href="#service-section"
           className="hover:scale-105 duration-500 text-white text-center mt-10 py-2 px-4 border-2 w-[30%] mx-auto border-white"
         >
@@ -28,7 +36,7 @@ const Hero = () => {
           >
             SERVICES
           </Link>
-        </button>
+        </motion.button>
       </div>
     </div>
   );
