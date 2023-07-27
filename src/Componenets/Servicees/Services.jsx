@@ -23,10 +23,10 @@ const Services = () => {
         >
           SERVICES
         </motion.h1>
-        <div className="flex flex-col md:flex-row gap-10 items-center px-2 sm:px-0">
+        <div className="flex flex-col md:flex-row gap-10 items-center justify-center sm:px-0">
           <div className="flex flex-col justify-center text-center bg-white  shadow-lg  border-2 border-[#FEF3F3] p-4 rounded">
-            <img src={IMG1} alt="services" className="w-[300] h-[auto]" />
-            <p className="text-2xl p-4">BRIDAL</p>
+            <img src={IMG1} alt="services" className="w-[250px] h-[auto]" />
+            <p className="text-2xl p-4 ">BRIDAL</p>
             <Link to="/Contact">
               <motion.div
                 initial={{ opacity: 0 }}
@@ -39,7 +39,7 @@ const Services = () => {
             </Link>
           </div>
           <div className="flex flex-col justify-center text-center bg-white  shadow-lg border-2 border-[#FEF3F3] p-4 rounded">
-            <img src={IMG2} alt="services" className="w-[300] h-[auto]" />
+            <img src={IMG2} alt="services" className="w-[250px] h-[auto]" />
             <p className="text-2xl p-4">EVENT</p>
             <Link to="/Contact">
               <motion.div
@@ -53,7 +53,7 @@ const Services = () => {
             </Link>
           </div>
           <div className="flex flex-col justify-center text-center bg-white  shadow-lg border-2 border-[#FEF3F3] p-4 rounded">
-            <img src={IMG3} alt="services" className="w-[300] h-[auto]" />
+            <img src={IMG3} alt="services" className="w-[250px] h-[auto]" />
             <p className="text-2xl p-4">CASUAL</p>
             <Link to="/Contact">
               <motion.div

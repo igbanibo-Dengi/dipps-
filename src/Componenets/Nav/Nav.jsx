@@ -12,8 +12,8 @@ const Nav = () => {
 
   return (
     <div className="z-1 shadow-lg">
-      <div className="bg-white fixed w-full z-10 shadow-2xl">
-        <nav className="flex flex-row relative justify-between items-center max-w-[1200px] px-2 xsm:w-[80%] mx-auto py-2">
+      <div className="bg-white fixed w-full z-10 shadow-xl">
+        <nav className="flex flex-row relative justify-between items-center max-w-[1200px] px-2 py-4 md:py-0 xsm:w-[80%] mx-auto">
           <span className="nav-logo text-[22px] md:text-[36px] lg:text-[48px] uppercase text-bold">
             Dipps Beautifyers
           </span>
@@ -47,9 +47,8 @@ const Nav = () => {
           <GrMenu size={25} className="lg:hidden" onClick={toggleMobileMenu} />
         </nav>
         <nav
-          className={`lg:hidden z-0 mx-auto absolute bg-white w-[60%] right-[20%] mobile-menu overflow-hidden ${
-            isMobileMenuOpen ? "open" : " "
-          }`}
+          className={`lg:hidden z-0 mx-auto absolute bg-white w-[60%] right-[20%] mobile-menu overflow-hidden ${isMobileMenuOpen ? "open" : " "
+            }`}
         >
           <ul className="flex flex-col justify-around shadow-md px-4 border-black border-t-2 h-[200px]">
             <Link
